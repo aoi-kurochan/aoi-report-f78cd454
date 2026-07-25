@@ -516,7 +516,11 @@ a {
   margin: 0;
   padding: 2px 0 0;
   color: var(--blue-deep);
-  font-family: Georgia, var(--serif);
+  /*
+   * 「約・数字・万円」を同じ和文明朝で描画する。
+   * 欧文だけ Georgia にすると、数字と日本語で字面の上下位置がずれる。
+   */
+  font-family: var(--serif);
   font-size: 29px;
   font-weight: 400;
   font-variant-numeric: tabular-nums;
