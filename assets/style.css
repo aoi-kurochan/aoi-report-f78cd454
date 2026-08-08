@@ -601,6 +601,49 @@ tbody th {
   font-size: 12px;
 }
 
+.report-figure {
+  margin-top: 34px;
+  margin-bottom: 42px;
+}
+
+.report-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.report-figure figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.embedded-article pre {
+  margin: 24px 0 30px;
+  padding: 22px 24px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: var(--blue-faint);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.embedded-article blockquote {
+  margin: 24px 0 30px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--blue);
+  background: var(--blue-faint);
+}
+
+.embedded-article blockquote p {
+  margin: 0;
+}
+
 .mobile-summary {
   display: none;
 }
