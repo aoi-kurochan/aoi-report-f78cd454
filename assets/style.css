@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --ink: #17364a;
   --text: #2e4b5c;
@@ -599,49 +601,6 @@ tbody th {
   font-size: 12px;
 }
 
-.report-figure {
-  margin-top: 34px;
-  margin-bottom: 42px;
-}
-
-.report-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--line);
-  background: var(--paper);
-}
-
-.report-figure figcaption {
-  margin-top: 9px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.65;
-  text-align: center;
-}
-
-.embedded-article pre {
-  margin: 24px 0 30px;
-  padding: 22px 24px;
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  background: var(--blue-faint);
-  color: var(--ink);
-  font-size: 13px;
-  line-height: 1.75;
-}
-
-.embedded-article blockquote {
-  margin: 24px 0 30px;
-  padding: 18px 22px;
-  border-left: 3px solid var(--blue);
-  background: var(--blue-faint);
-}
-
-.embedded-article blockquote p {
-  margin: 0;
-}
-
 .mobile-summary {
   display: none;
 }
@@ -822,6 +781,79 @@ tbody th {
   text-decoration-color: #73b4cf;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+
+.report-figure {
+  margin-top: 36px;
+  margin-bottom: 42px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.report-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.report-figure figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.report-section pre {
+  margin: 26px 0 34px;
+  padding: 24px 28px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: #f3f8fa;
+  color: #24475a;
+  font-size: 13px;
+  line-height: 1.85;
+  white-space: pre-wrap;
+}
+
+.download-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.download-panel > div {
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--blue-faint);
+}
+
+.download-panel h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.download-panel p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.download-panel a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 11px 16px;
+  border: 1px solid var(--blue-deep);
+  color: var(--paper);
+  background: var(--blue-deep);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.download-panel a:hover {
+  background: var(--blue);
 }
 
 .embedded-article {
@@ -1043,6 +1075,10 @@ tbody th {
 
   .table-wrap table {
     min-width: 620px;
+  }
+
+  .download-panel {
+    grid-template-columns: 1fr;
   }
 
   .desktop-summary {
